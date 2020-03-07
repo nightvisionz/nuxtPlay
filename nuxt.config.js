@@ -23,18 +23,21 @@ export default {
   ** Global CSS
   */
   css: [
+    { src: 'vue-material/dist/vue-material.min.css', land: "css" },
+    { src: '~/assets/theme.scss', land: 'scss' }
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue-material' }
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
+    //'@nuxtjs/tailwindcss',
   ],
   /*
   ** Nuxt.js modules
